@@ -1,0 +1,92 @@
+{
+    "opportunities": [
+        {
+            "id": 1,
+            "title": "Web Development",
+            "category": "Development",
+            "durationHours": 40,
+            "estimatedCost": 5000,
+            "level": "Beginner",
+            "description": "Learn the fundamentals of creating modern websites using HTML, CSS and JavaScript.",
+            "skills": ["HTML", "CSS", "JavaScript"],
+            "image": "../assets/images/WebDevelopmentCardImage.png"
+        },
+        {
+            "id": 2,
+            "title": "UI/UX Design",
+            "category": "Design",
+            "durationHours": 30,
+            "estimatedCost": 4000,
+            "level": "Beginner",
+            "description": "Learn the fundamentals of designing user-friendly and visually appealing digital experiences.",
+            "skills": ["Figma", "Wireframing", "Prototyping"],
+            "image": "../assets/images/WebDevelopmentCardImage.png"
+        },
+        {
+            "id": 3,
+            "title": "Graphic Design",
+            "category": "Design",
+            "durationHours": 35,
+            "estimatedCost": 4500,
+            "level": "Beginner",
+            "description": "Learn the basics of creating professional visual designs for digital and print media.",
+            "skills": ["Photoshop", "Illustrator", "Typography"],
+            "image": "../assets/images/WebDevelopmentCardImage.png"
+        },
+        {
+            "id": 4,
+            "title": "Python Programming",
+            "category": "Development",
+            "durationHours": 45,
+            "estimatedCost": 5500,
+            "level": "Beginner",
+            "description": "Learn Python programming fundamentals and build a strong foundation in programming logic.",
+            "skills": ["Python", "Programming Logic", "Problem Solving"],
+            "image": "../assets/images/WebDevelopmentCardImage.png"
+        },
+        {
+            "id": 5,
+            "title": "Digital Marketing",
+            "category": "Marketing",
+            "durationHours": 25,
+            "estimatedCost": 3500,
+            "level": "Intermediate",
+            "description": "Learn how to promote brands and products through modern digital marketing strategies.",
+            "skills": ["SEO", "Social Media", "Content Marketing"],
+            "image": "../assets/images/WebDevelopmentCardImage.png"
+        },
+        {
+            "id": 6,
+            "title": "Data Analysis",
+            "category": "Data",
+            "durationHours": 40,
+            "estimatedCost": 6000,
+            "level": "Intermediate",
+            "description": "Learn how to work with data, identify patterns and create useful insights.",
+            "skills": ["Excel", "Data Visualization", "Data Cleaning"],
+            "image": "../assets/images/WebDevelopmentCardImage.png"
+        },
+        {
+            "id": 7,
+            "title": "Mobile App Development",
+            "category": "Development",
+            "durationHours": 50,
+            "estimatedCost": 7000,
+            "level": "Intermediate",
+            "description": "Learn the fundamentals of developing functional applications for mobile devices.",
+            "skills": ["App Development", "UI Design", "Programming"],
+            "image": "../assets/images/WebDevelopmentCardImage.png"
+        },
+        {
+            "id": 8,
+            "title": "Game Development",
+            "category": "Development",
+            "durationHours": 50,
+            "estimatedCost": 7500,
+            "level": "Intermediate",
+            "description": "Learn the fundamentals of game development and create interactive digital experiences.",
+            "skills": ["Game Design", "Programming", "Game Engines"],
+            "image": "../assets/images/WebDevelopmentCardImage.png"
+        }
+    ]
+}

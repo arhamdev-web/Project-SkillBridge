@@ -139,6 +139,7 @@ body {
 /* Featured Courses Section CSS */
 
 .featuredCoursesSection{
+    background-color: var(--background);
     height: 500px;
     width: 100%;
     display: flex;
@@ -191,12 +192,16 @@ body {
     font-size: var(--fs-sm);
     line-height: 1.5;
     margin-bottom: 15px;
+    height: 70px;
 }
 
 .featuredCourseSkills{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 8px;
     margin-bottom: 20px;
+    height: 40px;
 }
 
 .featuredCourseSkills span{
@@ -205,6 +210,7 @@ body {
     border-radius: 20px;
     font-size: var(--fs-xs);
     color: var(--text);
+    margin-bottom: 5px;
 }
 
 .featuredCourseButton{
@@ -322,6 +328,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    position: relative;
 }
 
 .testimonialCard{
@@ -334,6 +342,9 @@ body {
     align-items: center;
     gap: 30px;
     border: 1px solid var(--border);
+    position: absolute;
+    left: 50%;
+    transition: transform 0.5s ease;
 }
 
 .testimonialImage{
@@ -548,6 +559,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
+    align-items: stretch;
 }
 
 .opportunityCard{
@@ -555,6 +567,7 @@ body {
     border: 1px solid var(--border);
     border-radius: 15px;
     overflow: hidden;
+    height: 450px;
 }
 
 .opportunityCard img{
@@ -565,6 +578,8 @@ body {
 
 .opportunityCardContent{
     padding: 18px;
+    display: flex;
+    flex-direction: column;
 }
 
 .opportunityCardContent h2{
@@ -577,21 +592,23 @@ body {
     color: var(--text-secondary);
     font-size: var(--fs-sm);
     line-height: 1.5;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    height: 65px;
 }
 
 .opportunityCardSkills{
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    height: 60px;
 }
 
 .opportunityCardSkills span{
     background-color: var(--background);
     border: 1px solid var(--border);
     border-radius: 20px;
-    padding: 5px 10px;
+    padding: 5px 5px;
     font-size: var(--fs-xs);
     color: var(--text);
 }

@@ -1,0 +1,32 @@
+{
+    "testimonials": [
+        {
+            "id": 1,
+            "name": "Ahmed Khan",
+            "role": "Web Development Student",
+            "message": "Skill Bridge helped me understand web development and build my first complete website.",
+            "image": "assets/images/WebDevelopmentTestimonialImage.png"
+        },
+        {
+            "id": 2,
+            "name": "Sara Ahmed",
+            "role": "UI/UX Design Student",
+            "message": "The learning experience was simple and practical. I improved my design skills while working on real projects.",
+            "image": "assets/images/WebDevelopmentTestimonialImage.png"
+        },
+        {
+            "id": 3,
+            "name": "Hamza Ali",
+            "role": "Python Programming Student",
+            "message": "The course helped me build a strong foundation in programming and improve my problem-solving skills.",
+            "image": "assets/images/WebDevelopmentTestimonialImage.png"
+        },
+        {
+            "id": 4,
+            "name": "Ayesha Malik",
+            "role": "Graphic Design Student",
+            "message": "Skill Bridge gave me the confidence to explore graphic design and create better visual projects.",
+            "image": "assets/images/WebDevelopmentTestimonialImage.png"
+        }
+    ]
+}
