@@ -1,4 +1,8 @@
+// COURSE SECTION
+
 const opportunitiesContainer = document.getElementById("opportunitiesContainer");
+
+let opportunityCards;
 
 fetch("../data/opportunities.json")
     .then(response => response.json())
@@ -39,5 +43,23 @@ fetch("../data/opportunities.json")
             content.appendChild(skills);
             content.appendChild(link);
 
-    });
+        });
+
+            opportunityCards = document.querySelectorAll(".opportunityCard");
+            console.log(opportunityCards);
+
+});
+
+
+// SEARCH SYSTEM SECTION
+
+
+const searchInput = document.querySelector(".opportunitiesSearchInput");
+const searchButton = document.querySelector(".opportunitiesSearchButton");
+
+    searchButton.addEventListener("click", function() {
+        const searchValue = searchInput.value.toLowerCase();
+        opportunityCards.forEach(card => {
+        console.log(card);
+    });  
 });
