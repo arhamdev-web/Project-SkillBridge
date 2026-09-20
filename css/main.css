@@ -483,6 +483,34 @@ body {
 /* OPPORTUNITIES PAGE CSS STARTED */
 
 
+/* No Course Found Message */
+
+.noCoursesMessage {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.noCoursesMessage i {
+    font-size: 40px;
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.noCoursesMessage h3 {
+    font-size: 24px;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.noCoursesMessage p {
+    font-size: 16px;
+    color: var(--text-secondary);
+}
+
 /* Opportunities Heading Section CSS */
 
 .opportunitiesHeadingSection{
@@ -511,6 +539,7 @@ body {
     padding: 30px 8%;
     background-color: var(--card);
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -548,6 +577,47 @@ body {
 .opportunitiesSearchButton:hover{
     background-color: var(--accent-hover);
     border-color: var(--accent-hover);
+}
+
+/* Search Suggestions */
+
+.searchSuggestions {
+    width: 650px;
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.searchSuggestions div {
+    padding: 8px 15px;
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    color: var(--text);
+    font-size: var(--fs-sm);
+    cursor: pointer;
+    animation: suggestionAppear 0.3s ease;
+    transition: all 0.2s ease;
+    display: inline-block;
+    width: auto;
+}
+
+.searchSuggestions div:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: var(--card);
+}
+
+@keyframes suggestionAppear {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Opportunities Cards Section CSS */
@@ -626,6 +696,23 @@ body {
 
 .opportunityCardContent a:hover{
     background-color: var(--accent-hover);
+}
+
+/* Cards Animation */
+
+@keyframes fadeInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.searchResult {
+    animation: fadeInFromRight 0.5s ease;
 }
 
 /* OPPORTUNITIES PAGE CSS ENDED */

@@ -2,7 +2,8 @@
 
 const featuredCoursesContainer = document.getElementById("featuredCoursesContainer");
 
-fetch("data/opportunities.json")
+if(featuredCoursesContainer) {
+    fetch("../data/opportunities.json")
     .then(response => response.json())
     .then(data => {
         const featuredCourses = data.opportunities.slice(0, 4);
@@ -62,6 +63,7 @@ fetch("data/opportunities.json")
             content.appendChild(button);
     });        
 });
+}
 
 // FEATURED COURSES SECTION JS ENDED
 
@@ -69,9 +71,11 @@ fetch("data/opportunities.json")
 // TESTIMONIALS SECTION JS STARTED
 
 const testimonialsContainer = document.getElementById("testimonialsContainer");
-let testimonialIndex = 0;
 
-fetch("data/testimonials.json")
+if(testimonialsContainer) {
+    let testimonialIndex = 0;
+
+fetch("../data/testimonials.json")
     .then(response => response.json())
     .then(data => {
 
@@ -201,5 +205,6 @@ fetch("data/testimonials.json")
             }, 500);
         }, 3000);
 });
+}
 
 // TESTIMONIALS SECTION JS ENDED
