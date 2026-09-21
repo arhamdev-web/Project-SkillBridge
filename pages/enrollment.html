@@ -37,33 +37,6 @@
         </p>
     </section>
 
-    <!-- Enrollment Course Selection Section -->
-
-    <section class="enrollmentCoursesSection">
-        <div class="enrollmentCoursesHeading">
-            <h2>Select Your Courses</h2>
-            <p>Choose the courses you want to enroll in.</p>
-        </div>
-        <div class="enrollmentCoursesContainer">
-            <div class="enrollmentCourseOption">
-                <input type="checkbox" id="webDevelopment" name="courses" value="Web Development">
-                <label for="webDevelopment">Web Development</label>
-            </div>
-            <div class="enrollmentCourseOption">
-                <input type="checkbox" id="webDevelopment" name="courses" value="Web Development">
-                <label for="webDevelopment">Web Development</label>
-            </div>
-            <div class="enrollmentCourseOption">
-                <input type="checkbox" id="webDevelopment" name="courses" value="Web Development">
-                <label for="webDevelopment">Web Development</label>
-            </div>
-            <div class="enrollmentCourseOption">
-                <input type="checkbox" id="webDevelopment" name="courses" value="Web Development">
-                <label for="webDevelopment">Web Development</label>
-            </div>
-        </div>
-    </section>
-
     <!-- Enrollment Form Section -->
 
     <section class="enrollmentFormSection">
@@ -72,35 +45,81 @@
             <p>Enter your information to complete your enrollment.</p>
         </div>
         <form class="enrollmentForm">
+            <div class="enrollmentCourseSelectionArea">
+                <div class="enrollmentAddCourseGroup">
+                    <label>Add Another Course</label>
+                    <button type="button" class="enrollmentAddCourseButton" disabled>
+                        + Add Another Course
+                    </button>
+                </div>
+
+                <div class="enrollmentCoursesColumn">
+                    <div class="enrollmentFormGroup enrollmentCourseGroup">
+                        <label for="courseSearch">Select Course</label>
+                        <div class="enrollmentCourseDropdown">
+                            <input type="text" id="courseSearch" name="course" placeholder="Search or select a course">
+                            <div class="enrollmentCourseSuggestions">
+                            </div>
+                        </div>
+                            <p class="enrollmentError"></p>
+                    </div>
+                    <div class="additionalCoursesContainer"></div>
+                </div>
+            </div>
             <div class="enrollmentFormGroup">
                 <label for="fullName">Full Name</label>
                 <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+                <p class="enrollmentError"></p>
             </div>
             <div class="enrollmentFormGroup">
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email address">
+                <input type="text" id="email" name="email" placeholder="Enter your email address">
+                <p class="enrollmentError"></p>
             </div>
             <div class="enrollmentFormGroup">
                 <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                <p class="enrollmentError"></p>
             </div>
             <div class="enrollmentFormGroup">
                 <label for="age">Age</label>
                 <input type="number" id="age" name="age" placeholder="Enter your age">
+                <p class="enrollmentError"></p>
             </div>
             <div class="enrollmentFormGroup">
                 <label for="city">City</label>
                 <input type="text" id="city" name="city" placeholder="Enter your city">
+                <p class="enrollmentError"></p>
             </div>
             <div class="enrollmentFormGroup enrollmentMessageGroup">
                 <label for="message">Learning Goals</label>
                 <textarea id="message" name="message" placeholder="Tell us what you want to achieve..."></textarea>
+                <p class="enrollmentError"></p>
             </div>
             <button type="submit" class="enrollmentSubmitButton">
                 Submit Enrollment
             </button>
         </form>
     </section>
+
+    <!-- Success PopUp Message -->
+
+    <div class="enrollmentSuccessOverlay">
+        <div class="enrollmentSuccessCard">
+            <div class="enrollmentSuccessIcon">✓</div>
+
+            <h2>Enrollment Submitted!</h2>
+
+            <p>
+                Your enrollment request has been received successfully.
+                We will review your details and get back to you soon.
+            </p>
+
+            <button type="button" class="enrollmentSuccessButton">
+                Done
+            </button>
+        </div>
+    </div>
 
     <!-- Footer Section -->
 

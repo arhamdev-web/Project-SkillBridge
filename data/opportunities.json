@@ -8,7 +8,100 @@
             "estimatedCost": 5000,
             "level": "Beginner",
             "description": "Learn the fundamentals of creating modern websites using HTML, CSS and JavaScript.",
-            "skills": ["HTML", "CSS", "JavaScript"],
+            "overview": [
+                "This course gives you the foundation needed to start building modern websites and understand how the web works.",
+                "You will work with HTML, CSS, and JavaScript while learning how to create responsive layouts and interactive web pages."
+            ],
+            "skills": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ],
+            "skillDetails": [
+                {
+                    "name": "HTML5",
+                    "icon": "fa-solid fa-code"
+                },
+                {
+                    "name": "CSS3",
+                    "icon": "fa-solid fa-palette"
+                },
+                {
+                    "name": "JavaScript",
+                    "icon": "fa-brands fa-js"
+                },
+                {
+                    "name": "Responsive Design",
+                    "icon": "fa-solid fa-mobile-screen"
+                },
+                {
+                    "name": "UI Design",
+                    "icon": "fa-solid fa-window-maximize"
+                },
+                {
+                    "name": "Web Development",
+                    "icon": "fa-solid fa-laptop-code"
+                }
+            ],
+            "topics": [
+                {
+                    "title": "HTML & Structure",
+                    "description": "Learn how to structure web pages using HTML5.",
+                    "icon": "fa-solid fa-code"
+                },
+                {
+                    "title": "CSS & Design",
+                    "description": "Create attractive and responsive website layouts.",
+                    "icon": "fa-solid fa-palette"
+                },
+                {
+                    "title": "JavaScript",
+                    "description": "Add logic and interactive features to your websites.",
+                    "icon": "fa-solid fa-bolt"
+                },
+                {
+                    "title": "Responsive Design",
+                    "description": "Build websites that work across different screen sizes.",
+                    "icon": "fa-solid fa-mobile-screen"
+                }
+            ],
+            "requirements": [
+                {
+                    "text": "Basic computer knowledge",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Access to a computer or laptop",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Basic understanding of using the internet",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Willingness to learn and practice",
+                    "icon": "fa-solid fa-check"
+                }
+            ],
+            "outcomes": [
+                {
+                    "title": "Build Web Pages",
+                    "description": "Create structured web pages using HTML5."
+                },
+                {
+                    "title": "Design Responsive Websites",
+                    "description": "Create clean layouts that work across different screen sizes."
+                },
+                {
+                    "title": "Add Interactivity",
+                    "description": "Use JavaScript to add interactive features and functionality."
+                },
+                {
+                    "title": "Create Real Projects",
+                    "description": "Apply your skills by building practical web development projects."
+                }
+            ],
+
             "image": "../assets/images/WebDevelopmentCardImage.png"
         },
         {
@@ -19,7 +112,99 @@
             "estimatedCost": 4000,
             "level": "Beginner",
             "description": "Learn the fundamentals of designing user-friendly and visually appealing digital experiences.",
-            "skills": ["Figma", "Wireframing", "Prototyping"],
+            "overview": [
+                "This course introduces you to the fundamentals of user interface and user experience design.",
+                "You will learn how to plan, design, and prototype digital experiences that are clear, useful, and easy to use."
+            ],
+            "skills": [
+                "Figma",
+                "Wireframing",
+                "Prototyping"
+            ],
+            "skillDetails": [
+                {
+                    "name": "Figma",
+                    "icon": "fa-brands fa-figma"
+                },
+                {
+                    "name": "Wireframing",
+                    "icon": "fa-solid fa-object-group"
+                },
+                {
+                    "name": "Prototyping",
+                    "icon": "fa-solid fa-layer-group"
+                },
+                {
+                    "name": "UI Design",
+                    "icon": "fa-solid fa-window-maximize"
+                },
+                {
+                    "name": "UX Research",
+                    "icon": "fa-solid fa-magnifying-glass"
+                },
+                {
+                    "name": "User Flows",
+                    "icon": "fa-solid fa-route"
+                }
+            ],
+            "topics": [
+                {
+                    "title": "UI Design",
+                    "description": "Learn how to create clean and visually appealing user interfaces.",
+                    "icon": "fa-solid fa-palette"
+                },
+                {
+                    "title": "UX Principles",
+                    "description": "Understand the principles behind creating useful and user-friendly experiences.",
+                    "icon": "fa-solid fa-users"
+                },
+                {
+                    "title": "Wireframing",
+                    "description": "Plan page layouts and user flows before creating detailed designs.",
+                    "icon": "fa-solid fa-object-group"
+                },
+                {
+                    "title": "Prototyping",
+                    "description": "Create interactive prototypes to demonstrate how a digital product works.",
+                    "icon": "fa-solid fa-layer-group"
+                }
+            ],
+            "requirements": [
+                {
+                    "text": "Basic computer knowledge",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Access to a computer or laptop",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Basic understanding of websites and apps",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Willingness to learn and practice",
+                    "icon": "fa-solid fa-check"
+                }
+            ],
+            "outcomes": [
+                {
+                    "title": "Create UI Designs",
+                    "description": "Design clean and visually appealing interfaces for digital products."
+                },
+                {
+                    "title": "Plan User Experiences",
+                    "description": "Create user flows and layouts based on user needs."
+                },
+                {
+                    "title": "Build Wireframes",
+                    "description": "Create structured wireframes to plan digital interfaces."
+                },
+                {
+                    "title": "Create Prototypes",
+                    "description": "Build interactive prototypes that demonstrate user interactions."
+                }
+            ],
             "image": "../assets/images/WebDevelopmentCardImage.png"
         },
         {
@@ -30,7 +215,99 @@
             "estimatedCost": 4500,
             "level": "Beginner",
             "description": "Learn the basics of creating professional visual designs for digital and print media.",
-            "skills": ["Photoshop", "Illustrator", "Typography"],
+            "overview": [
+                "This course introduces the fundamentals of graphic design and visual communication.",
+                "You will learn how to create balanced, attractive designs while working with typography, color, images, and professional design tools."
+            ],
+            "skills": [
+                "Photoshop",
+                "Illustrator",
+                "Typography"
+            ],
+            "skillDetails": [
+                {
+                    "name": "Photoshop",
+                    "icon": "fa-solid fa-image"
+                },
+                {
+                    "name": "Illustrator",
+                    "icon": "fa-solid fa-pen-nib"
+                },
+                {
+                    "name": "Typography",
+                    "icon": "fa-solid fa-font"
+                },
+                {
+                    "name": "Color Theory",
+                    "icon": "fa-solid fa-palette"
+                },
+                {
+                    "name": "Visual Design",
+                    "icon": "fa-solid fa-eye"
+                },
+                {
+                    "name": "Branding",
+                    "icon": "fa-solid fa-tag"
+                }
+            ],
+            "topics": [
+                {
+                    "title": "Design Fundamentals",
+                    "description": "Understand the basic principles used to create effective visual designs.",
+                    "icon": "fa-solid fa-shapes"
+                },
+                {
+                    "title": "Typography",
+                    "description": "Learn how fonts, spacing, and text hierarchy improve visual communication.",
+                    "icon": "fa-solid fa-font"
+                },
+                {
+                    "title": "Color & Composition",
+                    "description": "Use color and composition to create balanced and engaging designs.",
+                    "icon": "fa-solid fa-palette"
+                },
+                {
+                    "title": "Digital Design",
+                    "description": "Create professional graphics for digital platforms and online content.",
+                    "icon": "fa-solid fa-image"
+                }
+            ],
+            "requirements": [
+                {
+                    "text": "Basic computer knowledge",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Access to a computer or laptop",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Basic understanding of using digital tools",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Willingness to learn and practice",
+                    "icon": "fa-solid fa-check"
+                }
+            ],
+            "outcomes": [
+                {
+                    "title": "Create Visual Designs",
+                    "description": "Create attractive graphics for digital and print purposes."
+                },
+                {
+                    "title": "Use Design Tools",
+                    "description": "Work with common graphic design tools and techniques."
+                },
+                {
+                    "title": "Apply Design Principles",
+                    "description": "Use typography, color, and composition effectively."
+                },
+                {
+                    "title": "Build Design Projects",
+                    "description": "Apply your skills by creating practical graphic design projects."
+                }
+            ],
             "image": "../assets/images/WebDevelopmentCardImage.png"
         },
         {
@@ -41,7 +318,99 @@
             "estimatedCost": 5500,
             "level": "Beginner",
             "description": "Learn Python programming fundamentals and build a strong foundation in programming logic.",
-            "skills": ["Python", "Programming Logic", "Problem Solving"],
+            "overview": [
+                "This course introduces the fundamentals of Python programming and helps you build a strong foundation in coding.",
+                "You will learn programming concepts, problem solving, and how to create simple Python programs using clear and practical examples."
+            ],
+            "skills": [
+                "Python",
+                "Programming Logic",
+                "Problem Solving"
+            ],
+            "skillDetails": [
+                {
+                    "name": "Python",
+                    "icon": "fa-brands fa-python"
+                },
+                {
+                    "name": "Programming Logic",
+                    "icon": "fa-solid fa-code"
+                },
+                {
+                    "name": "Problem Solving",
+                    "icon": "fa-solid fa-puzzle-piece"
+                },
+                {
+                    "name": "Data Types",
+                    "icon": "fa-solid fa-database"
+                },
+                {
+                    "name": "Functions",
+                    "icon": "fa-solid fa-gears"
+                },
+                {
+                    "name": "Algorithms",
+                    "icon": "fa-solid fa-diagram-project"
+                }
+            ],
+            "topics": [
+                {
+                    "title": "Python Basics",
+                    "description": "Learn Python syntax, variables, data types, and basic programming concepts.",
+                    "icon": "fa-brands fa-python"
+                },
+                {
+                    "title": "Control Flow",
+                    "description": "Use conditions and loops to control how Python programs behave.",
+                    "icon": "fa-solid fa-code-branch"
+                },
+                {
+                    "title": "Functions",
+                    "description": "Create reusable blocks of code using Python functions.",
+                    "icon": "fa-solid fa-gears"
+                },
+                {
+                    "title": "Problem Solving",
+                    "description": "Develop logical thinking and solve programming problems using Python.",
+                    "icon": "fa-solid fa-puzzle-piece"
+                }
+            ],
+            "requirements": [
+                {
+                    "text": "Basic computer knowledge",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Access to a computer or laptop",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Basic understanding of using the internet",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Willingness to learn and practice",
+                    "icon": "fa-solid fa-check"
+                }
+            ],
+            "outcomes": [
+                {
+                    "title": "Write Python Programs",
+                    "description": "Create simple programs using Python fundamentals."
+                },
+                {
+                    "title": "Use Programming Logic",
+                    "description": "Apply conditions, loops, and logical thinking to solve problems."
+                },
+                {
+                    "title": "Create Functions",
+                    "description": "Build reusable functions to organize and simplify Python programs."
+                },
+                {
+                    "title": "Solve Coding Problems",
+                    "description": "Use Python concepts to approach and solve practical programming problems."
+                }
+            ],
             "image": "../assets/images/WebDevelopmentCardImage.png"
         },
         {
@@ -52,7 +421,99 @@
             "estimatedCost": 3500,
             "level": "Intermediate",
             "description": "Learn how to promote brands and products through modern digital marketing strategies.",
-            "skills": ["SEO", "Social Media", "Content Marketing"],
+            "overview": [
+                "This course introduces the fundamentals of digital marketing and how businesses use online platforms to reach their audiences.",
+                "You will explore search engines, social media, content, and basic marketing strategies used to build an effective online presence."
+            ],
+            "skills": [
+                "SEO",
+                "Social Media",
+                "Content Marketing"
+            ],
+            "skillDetails": [
+                {
+                    "name": "SEO",
+                    "icon": "fa-solid fa-magnifying-glass"
+                },
+                {
+                    "name": "Social Media",
+                    "icon": "fa-solid fa-share-nodes"
+                },
+                {
+                    "name": "Content Marketing",
+                    "icon": "fa-solid fa-pen-to-square"
+                },
+                {
+                    "name": "Digital Advertising",
+                    "icon": "fa-solid fa-bullhorn"
+                },
+                {
+                    "name": "Analytics",
+                    "icon": "fa-solid fa-chart-line"
+                },
+                {
+                    "name": "Email Marketing",
+                    "icon": "fa-solid fa-envelope"
+                }
+            ],
+            "topics": [
+                {
+                    "title": "Search Engine Optimization",
+                    "description": "Learn the basics of improving online visibility through search engines.",
+                    "icon": "fa-solid fa-magnifying-glass"
+                },
+                {
+                    "title": "Social Media Marketing",
+                    "description": "Understand how brands use social media to connect with their audiences.",
+                    "icon": "fa-solid fa-share-nodes"
+                },
+                {
+                    "title": "Content Marketing",
+                    "description": "Create useful content that attracts and engages a target audience.",
+                    "icon": "fa-solid fa-pen-to-square"
+                },
+                {
+                    "title": "Digital Campaigns",
+                    "description": "Learn the fundamentals of planning and managing online marketing campaigns.",
+                    "icon": "fa-solid fa-bullhorn"
+                }
+            ],
+            "requirements": [
+                {
+                    "text": "Basic computer knowledge",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Access to a computer or laptop",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Basic understanding of using the internet",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Willingness to learn and practice",
+                    "icon": "fa-solid fa-check"
+                }
+            ],
+            "outcomes": [
+                {
+                    "title": "Understand Digital Marketing",
+                    "description": "Understand the core concepts and channels used in digital marketing."
+                },
+                {
+                    "title": "Improve Online Visibility",
+                    "description": "Apply basic SEO techniques to improve a website's online presence."
+                },
+                {
+                    "title": "Create Marketing Content",
+                    "description": "Develop useful content for different digital platforms."
+                },
+                {
+                    "title": "Plan Digital Campaigns",
+                    "description": "Create basic strategies for promoting products and services online."
+                }
+            ],
             "image": "../assets/images/WebDevelopmentCardImage.png"
         },
         {
@@ -63,7 +524,100 @@
             "estimatedCost": 6000,
             "level": "Intermediate",
             "description": "Learn how to work with data, identify patterns and create useful insights.",
-            "skills": ["Excel", "Data Visualization", "Data Cleaning"],
+
+            "overview": [
+                "This course introduces the fundamentals of data analysis and how raw data can be transformed into useful information.",
+                "You will learn how to organize, clean, visualize, and interpret data to identify patterns and support practical decisions."
+            ],
+            "skills": [
+                "Excel",
+                "Data Visualization",
+                "Data Cleaning"
+            ],
+            "skillDetails": [
+                {
+                    "name": "Excel",
+                    "icon": "fa-solid fa-table"
+                },
+                {
+                    "name": "Data Visualization",
+                    "icon": "fa-solid fa-chart-column"
+                },
+                {
+                    "name": "Data Cleaning",
+                    "icon": "fa-solid fa-filter"
+                },
+                {
+                    "name": "Data Analysis",
+                    "icon": "fa-solid fa-chart-line"
+                },
+                {
+                    "name": "Statistics",
+                    "icon": "fa-solid fa-calculator"
+                },
+                {
+                    "name": "Reporting",
+                    "icon": "fa-solid fa-file-lines"
+                }
+            ],
+            "topics": [
+                {
+                    "title": "Working With Data",
+                    "description": "Learn how to organize and manage datasets for analysis.",
+                    "icon": "fa-solid fa-table"
+                },
+                {
+                    "title": "Data Cleaning",
+                    "description": "Prepare raw data by identifying and correcting common data issues.",
+                    "icon": "fa-solid fa-filter"
+                },
+                {
+                    "title": "Data Visualization",
+                    "description": "Create charts and visual representations to understand data more clearly.",
+                    "icon": "fa-solid fa-chart-column"
+                },
+                {
+                    "title": "Data Insights",
+                    "description": "Identify patterns and useful insights from analyzed data.",
+                    "icon": "fa-solid fa-chart-line"
+                }
+            ],
+            "requirements": [
+                {
+                    "text": "Basic computer knowledge",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Access to a computer or laptop",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Basic understanding of spreadsheets",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Willingness to learn and practice",
+                    "icon": "fa-solid fa-check"
+                }
+            ],
+            "outcomes": [
+                {
+                    "title": "Organize Data",
+                    "description": "Structure and manage datasets for further analysis."
+                },
+                {
+                    "title": "Clean Data",
+                    "description": "Identify and correct common issues found in raw datasets."
+                },
+                {
+                    "title": "Create Visualizations",
+                    "description": "Present data using clear and useful charts and visualizations."
+                },
+                {
+                    "title": "Generate Insights",
+                    "description": "Analyze data to identify patterns and communicate useful findings."
+                }
+            ],
             "image": "../assets/images/WebDevelopmentCardImage.png"
         },
         {
@@ -74,7 +628,99 @@
             "estimatedCost": 7000,
             "level": "Intermediate",
             "description": "Learn the fundamentals of developing functional applications for mobile devices.",
-            "skills": ["App Development", "UI Design", "Programming"],
+            "overview": [
+                "This course introduces the fundamentals of mobile application development and the process of building apps for mobile devices.",
+                "You will learn about app structure, user interfaces, programming logic, and how different components work together to create functional applications."
+            ],
+            "skills": [
+                "App Development",
+                "UI Design",
+                "Programming"
+            ],
+            "skillDetails": [
+                {
+                    "name": "App Development",
+                    "icon": "fa-solid fa-mobile-screen"
+                },
+                {
+                    "name": "UI Design",
+                    "icon": "fa-solid fa-window-maximize"
+                },
+                {
+                    "name": "Programming",
+                    "icon": "fa-solid fa-code"
+                },
+                {
+                    "name": "App Navigation",
+                    "icon": "fa-solid fa-route"
+                },
+                {
+                    "name": "User Interfaces",
+                    "icon": "fa-solid fa-layer-group"
+                },
+                {
+                    "name": "App Testing",
+                    "icon": "fa-solid fa-vial"
+                }
+            ],
+            "topics": [
+                {
+                    "title": "Mobile App Basics",
+                    "description": "Understand the basic structure and components of mobile applications.",
+                    "icon": "fa-solid fa-mobile-screen"
+                },
+                {
+                    "title": "App UI Design",
+                    "description": "Design simple and user-friendly interfaces for mobile applications.",
+                    "icon": "fa-solid fa-window-maximize"
+                },
+                {
+                    "title": "App Programming",
+                    "description": "Learn programming concepts used to build functional mobile applications.",
+                    "icon": "fa-solid fa-code"
+                },
+                {
+                    "title": "Testing Applications",
+                    "description": "Learn how to test applications and identify common issues.",
+                    "icon": "fa-solid fa-vial"
+                }
+            ],
+            "requirements": [
+                {
+                    "text": "Basic computer knowledge",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Access to a computer or laptop",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Basic programming understanding",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Willingness to learn and practice",
+                    "icon": "fa-solid fa-check"
+                }
+            ],
+            "outcomes": [
+                {
+                    "title": "Understand App Structure",
+                    "description": "Understand the main components and structure of mobile applications."
+                },
+                {
+                    "title": "Design Mobile Interfaces",
+                    "description": "Create simple and user-friendly interfaces for mobile devices."
+                },
+                {
+                    "title": "Build App Features",
+                    "description": "Apply programming concepts to create functional application features."
+                },
+                {
+                    "title": "Test Applications",
+                    "description": "Test mobile applications and identify common functionality issues."
+                }
+            ],
             "image": "../assets/images/WebDevelopmentCardImage.png"
         },
         {
@@ -85,7 +731,99 @@
             "estimatedCost": 7500,
             "level": "Intermediate",
             "description": "Learn the fundamentals of game development and create interactive digital experiences.",
-            "skills": ["Game Design", "Programming", "Game Engines"],
+            "overview": [
+                "This course introduces the fundamentals of game development and the process of creating interactive digital experiences.",
+                "You will explore game design, programming logic, game mechanics, and the basic workflow used to build playable games."
+            ],
+            "skills": [
+                "Game Design",
+                "Programming",
+                "Game Engines"
+            ],
+            "skillDetails": [
+                {
+                    "name": "Game Design",
+                    "icon": "fa-solid fa-gamepad"
+                },
+                {
+                    "name": "Programming",
+                    "icon": "fa-solid fa-code"
+                },
+                {
+                    "name": "Game Engines",
+                    "icon": "fa-solid fa-gears"
+                },
+                {
+                    "name": "Game Mechanics",
+                    "icon": "fa-solid fa-puzzle-piece"
+                },
+                {
+                    "name": "Level Design",
+                    "icon": "fa-solid fa-map"
+                },
+                {
+                    "name": "Game Testing",
+                    "icon": "fa-solid fa-vial"
+                }
+            ],
+            "topics": [
+                {
+                    "title": "Game Design",
+                    "description": "Learn the basic principles of designing engaging and interactive games.",
+                    "icon": "fa-solid fa-gamepad"
+                },
+                {
+                    "title": "Game Programming",
+                    "description": "Understand programming logic used to create interactive game features.",
+                    "icon": "fa-solid fa-code"
+                },
+                {
+                    "title": "Game Mechanics",
+                    "description": "Learn how gameplay rules and mechanics create interactive experiences.",
+                    "icon": "fa-solid fa-puzzle-piece"
+                },
+                {
+                    "title": "Level Design",
+                    "description": "Understand how levels and environments are structured within a game.",
+                    "icon": "fa-solid fa-map"
+                }
+            ],
+            "requirements": [
+                {
+                    "text": "Basic computer knowledge",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Access to a computer or laptop",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Basic understanding of programming concepts",
+                    "icon": "fa-solid fa-check"
+                },
+                {
+                    "text": "Willingness to learn and practice",
+                    "icon": "fa-solid fa-check"
+                }
+            ],
+            "outcomes": [
+                {
+                    "title": "Understand Game Development",
+                    "description": "Understand the basic workflow and concepts involved in creating games."
+                },
+                {
+                    "title": "Design Game Mechanics",
+                    "description": "Create simple gameplay mechanics and interactive elements."
+                },
+                {
+                    "title": "Build Game Features",
+                    "description": "Apply programming concepts to create functional game features."
+                },
+                {
+                    "title": "Create Playable Projects",
+                    "description": "Combine your skills to build simple and interactive game projects."
+                }
+            ],
             "image": "../assets/images/WebDevelopmentCardImage.png"
         }
     ]

@@ -1124,6 +1124,104 @@ body {
     gap: 20px;
 }
 
+.enrollmentCourseSelectionArea{
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.enrollmentCoursesColumn{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.additionalCoursesContainer{
+    display: contents;
+}
+
+.additionalCoursesContainer .enrollmentFormGroup{
+    position: relative;
+}
+
+.enrollmentCourseDropdown{
+    position: relative;
+}
+
+.enrollmentCourseSuggestions{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 190px;
+    overflow-y: auto;
+    display: none;
+    gap: 5px;
+    padding: 6px;
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    z-index: 10;
+}
+
+.enrollmentCourseSuggestion{
+    padding: 9px 12px;
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    font-size: var(--fs-sm);
+    cursor: pointer;
+}
+
+.enrollmentCourseSuggestion:hover{
+    border-color: var(--accent);
+}
+
+.enrollmentAddCourseGroup{
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.enrollmentAddCourseGroup label{
+    color: var(--text);
+    font-size: var(--fs-sm);
+    font-weight: 600;
+}
+
+.enrollmentAddCourseButton{
+    padding: 12px 15px;
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-size: var(--fs-base);
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.enrollmentAddCourseButton:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.enrollmentAddCourseButton:hover{
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.enrollmentError{
+    margin: 0;
+    color: var(--error);
+    font-size: var(--fs-sm);
+}
+
 .enrollmentFormGroup{
     display: flex;
     flex-direction: column;
@@ -1177,6 +1275,101 @@ body {
     background-color: var(--accent-hover);
     border-color: var(--accent-hover);
 }
+
+.enrollmentSuccess{
+    grid-column: 1 / -1;
+    margin: 0;
+    text-align: center;
+    color: var(--success);
+    font-size: var(--fs-base);
+    font-weight: 600;
+}
+
+/* PopUp Message CSS */
+
+/* PopUp Message CSS */
+
+.enrollmentSuccessOverlay{
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(15, 23, 42, 0.45);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.enrollmentSuccessOverlay.active{
+    display: flex;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.enrollmentSuccessCard{
+    width: 420px;
+    max-width: 90%;
+    padding: 35px;
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(20px) scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+.enrollmentSuccessOverlay.active .enrollmentSuccessCard{
+    transform: translateY(0) scale(1);
+}
+
+.enrollmentSuccessIcon{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--success);
+    color: var(--card);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.enrollmentSuccessCard h2{
+    margin-bottom: 10px;
+    color: var(--text);
+    font-size: var(--fs-2xl);
+}
+
+.enrollmentSuccessCard p{
+    margin-bottom: 25px;
+    color: var(--text-secondary);
+    font-size: var(--fs-base);
+    line-height: 1.6;
+}
+
+.enrollmentSuccessButton{
+    padding: 11px 25px;
+    background-color: var(--accent);
+    border: 2px solid var(--accent);
+    border-radius: 8px;
+    color: var(--card);
+    font-size: var(--fs-base);
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.enrollmentSuccessButton:hover{
+    background-color: var(--accent-hover);
+    border-color: var(--accent-hover);
+}
+
 
 /* ENROLLMENT PAGE CSS ENDED */
 
@@ -1420,6 +1613,7 @@ body {
 .courseOverviewTopic:hover{
     border-color: var(--accent);
     transform: translateY(-3px);
+    cursor: pointer;
 }
 
 .courseOverviewTopic i{
@@ -1487,6 +1681,7 @@ body {
 .courseSkill:hover{
     border-color: var(--accent);
     transform: translateY(-3px);
+    cursor: pointer;
 }
 
 .courseSkill i{
@@ -1599,6 +1794,7 @@ body {
 .learningOutcome:hover{
     border-color: var(--accent);
     transform: translateY(-3px);
+    cursor: pointer;
 }
 
 .learningOutcome > span{

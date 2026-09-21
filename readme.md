@@ -200,3 +200,32 @@
             </div>
         </div>
     </section>
+
+    <div class="courseOverviewTopic">
+                    <i class="fa-solid fa-code"></i>
+                    <div>
+                        <h3>HTML & Structure</h3>
+                        <p>Learn how to structure web pages using HTML5.</p>
+                    </div>
+                </div>
+                <div class="courseOverviewTopic">
+                    <i class="fa-solid fa-palette"></i>
+                    <div>
+                        <h3>CSS & Design</h3>
+                        <p>Create attractive and responsive website layouts.</p>
+                    </div>
+                </div>
+                <div class="courseOverviewTopic">
+                    <i class="fa-solid fa-bolt"></i>
+                    <div>
+                        <h3>JavaScript</h3>
+                        <p>Add logic and interactive features to your websites.</p>
+                    </div>
+                </div>
+                <div class="courseOverviewTopic">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <div>
+                        <h3>Responsive Design</h3>
+                        <p>Build websites that work across different screen sizes.</p>
+                    </div>
+                </div>

@@ -33,24 +33,21 @@
     <section class="courseDetailsHeroSection">
         <div class="courseDetailsHeroContent">
             <div class="courseDetailsHeroText">
-                <span class="courseDetailsCategory">Web Development</span>
-                <h1>Build Modern Websites</h1>
-                <p>
-                    Learn how to create modern, responsive, and interactive
-                    websites using HTML, CSS, and JavaScript.
-                </p>
+                <span class="courseDetailsCategory" id="courseCategory"></span>
+                <h1 id="courseTitle"></h1>
+                <p id="courseDescription"></p>
                 <div class="courseDetailsInfo">
                     <span>
                         <i class="fa-solid fa-clock"></i>
-                        3 Months
+                        <span id="courseDuration"></span>
                     </span>
                     <span>
                         <i class="fa-solid fa-money-bill"></i>
-                        PKR 5,000
+                        <span id="courseCost"></span>
                     </span>
                     <span>
                         <i class="fa-solid fa-signal"></i>
-                        Beginner
+                        <span id="courseLevel"></span>
                     </span>
                 </div>
                 <div class="courseDetailsButtons">
@@ -59,7 +56,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
     <!-- Course Overview Section -->
 
@@ -67,44 +64,11 @@
         <div class="courseOverviewContent">
             <div class="courseOverviewText">
                 <h2>What You'll Learn</h2>
-                <p>
-                    This course gives you the foundation needed to start building
-                    modern websites and understand how the web works.
-                </p>
-                <p>
-                    You will work with HTML, CSS, and JavaScript while learning
-                    how to create responsive layouts and interactive web pages.
-                </p>
+                <p id="overviewFirst"></p>
+                <p id="overviewSecond"></p>
             </div>
             <div class="courseOverviewTopics">
-                <div class="courseOverviewTopic">
-                    <i class="fa-solid fa-code"></i>
-                    <div>
-                        <h3>HTML & Structure</h3>
-                        <p>Learn how to structure web pages using HTML5.</p>
-                    </div>
-                </div>
-                <div class="courseOverviewTopic">
-                    <i class="fa-solid fa-palette"></i>
-                    <div>
-                        <h3>CSS & Design</h3>
-                        <p>Create attractive and responsive website layouts.</p>
-                    </div>
-                </div>
-                <div class="courseOverviewTopic">
-                    <i class="fa-solid fa-bolt"></i>
-                    <div>
-                        <h3>JavaScript</h3>
-                        <p>Add logic and interactive features to your websites.</p>
-                    </div>
-                </div>
-                <div class="courseOverviewTopic">
-                    <i class="fa-solid fa-mobile-screen"></i>
-                    <div>
-                        <h3>Responsive Design</h3>
-                        <p>Build websites that work across different screen sizes.</p>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -117,31 +81,7 @@
             <p>Develop practical skills that you can use in real-world projects.</p>
         </div>
         <div class="courseSkillsContainer">
-
-            <div class="courseSkill">
-                <i class="fa-solid fa-code"></i>
-                <span>HTML5</span>
-            </div>
-            <div class="courseSkill">
-                <i class="fa-solid fa-palette"></i>
-                <span>CSS3</span>
-            </div>
-            <div class="courseSkill">
-                <i class="fa-brands fa-js"></i>
-                <span>JavaScript</span>
-            </div>
-            <div class="courseSkill">
-                <i class="fa-solid fa-mobile-screen"></i>
-                <span>Responsive Design</span>
-            </div>
-            <div class="courseSkill">
-                <i class="fa-solid fa-window-maximize"></i>
-                <span>UI Design</span>
-            </div>
-            <div class="courseSkill">
-                <i class="fa-solid fa-laptop-code"></i>
-                <span>Web Development</span>
-            </div>
+            
         </div>
     </section>
 
@@ -157,22 +97,7 @@
                 </p>
             </div>
             <div class="courseRequirementsList">
-                <div class="courseRequirement">
-                    <i class="fa-solid fa-check"></i>
-                    <span>Basic computer knowledge</span>
-                </div>
-                <div class="courseRequirement">
-                    <i class="fa-solid fa-check"></i>
-                    <span>Access to a computer or laptop</span>
-                </div>
-                <div class="courseRequirement">
-                    <i class="fa-solid fa-check"></i>
-                    <span>Basic understanding of using the internet</span>
-                </div>
-                <div class="courseRequirement">
-                    <i class="fa-solid fa-check"></i>
-                    <span>Willingness to learn and practice</span>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -185,34 +110,7 @@
             <p>By the end of this course, you will be able to:</p>
         </div>
         <div class="learningOutcomesContainer">
-            <div class="learningOutcome">
-                <span>01</span>
-                <div>
-                    <h3>Build Web Pages</h3>
-                    <p>Create structured web pages using HTML5.</p>
-                </div>
-            </div>
-            <div class="learningOutcome">
-                <span>02</span>
-                <div>
-                    <h3>Design Responsive Websites</h3>
-                    <p>Create clean layouts that work across different screen sizes.</p>
-                </div>
-            </div>
-            <div class="learningOutcome">
-                <span>03</span>
-                <div>
-                    <h3>Add Interactivity</h3>
-                    <p>Use JavaScript to add interactive features and functionality.</p>
-                </div>
-            </div>
-            <div class="learningOutcome">
-                <span>04</span>
-                <div>
-                    <h3>Create Real Projects</h3>
-                    <p>Apply your skills by building practical web development projects.</p>
-                </div>
-            </div>
+
         </div>
     </section>
 
@@ -269,6 +167,6 @@
 
     <!-- Script -->
     <script src="../js/main.js"></script>
-    <script src="../js/planner.js"></script>
+    <script src="../js/details.js"></script>
 </body>
 </html>
