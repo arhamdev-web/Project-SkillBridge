@@ -766,12 +766,6 @@ body {
     font-size: var(--fs-base);
 }
 
-.plannerCoursesContainer{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
 .plannerCourseCard{
     background-color: var(--background);
     border: 1px solid var(--border);
@@ -789,49 +783,213 @@ body {
     transform: translateY(-5px);
 }
 
-.plannerCourseInfo h3{
+.plannerAddCourseCard{
+    width: 100%;
+    min-height: 260px;
+    padding: 20px;
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--text-secondary);
+    font-size: var(--fs-lg);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.plannerAddCourseCard i{
+    font-size: var(--fs-3xl);
+    color: var(--accent);
+}
+
+.plannerAddCourseCard:hover{
+    border-color: var(--accent);
+    transform: translateY(-5px);
+}
+
+.plannerSelectedCoursesSection{
+    width: 100%;
+    padding: 50px 6%;
+    background-color: var(--background);
+}
+
+.plannerSelectedCoursesContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.plannerSelectedCourseCard{
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 260px;
+    transition: all 0.2s ease;
+}
+
+.plannerSelectedCourseCard:hover{
+    border-color: var(--accent);
+    transform: translateY(-5px);
+}
+
+.plannerSelectedCourseCard .plannerCourseInfo h3{
     font-size: var(--fs-xl);
     color: var(--text);
     margin-bottom: 10px;
 }
 
-.plannerCourseInfo p{
+.plannerSelectedCourseCard .plannerCourseInfo p{
     color: var(--text-secondary);
     font-size: var(--fs-sm);
     line-height: 1.5;
     margin-bottom: 20px;
 }
 
-.plannerCourseDetails{
+.plannerSelectedCourseCard .plannerCourseDetails{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
-.plannerCourseDetails span:first-child{
+.plannerSelectedCourseCard .plannerCourseDetails span:first-child{
     color: var(--text-secondary);
 }
 
-.plannerCourseDetails span:last-child{
+.plannerSelectedCourseCard .plannerCourseDetails span:last-child{
     color: var(--accent);
     font-weight: 600;
 }
 
-.plannerCourseButton{
+.plannerRemoveCourseButton{
     width: 100%;
     padding: 10px;
-    background-color: var(--accent);
-    border: 2px solid var(--accent);
+    margin-top: 20px;
+    background-color: transparent;
+    border: 1px solid var(--error);
     border-radius: 8px;
-    color: var(--card);
+    color: var(--error);
     font-size: var(--fs-sm);
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
-.plannerCourseButton:hover{
-    background-color: var(--accent-hover);
-    border-color: var(--accent-hover);
+.plannerRemoveCourseButton:hover{
+    background-color: var(--error);
+    color: var(--card);
+}
+
+/* Planner Course Popup */
+
+.plannerCourseOverlay{
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(15, 23, 42, 0.45);
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+.plannerCoursePopup{
+    width: 600px;
+    max-width: 90%;
+    height: 600px;
+    max-height: 80vh;
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.2);
+    overflow: hidden;
+}
+
+.plannerCoursePopupHeader{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.plannerCoursePopupHeader h2{
+    color: var(--text);
+    font-size: var(--fs-2xl);
+    margin-bottom: 8px;
+}
+
+.plannerCoursePopupHeader p{
+    color: var(--text-secondary);
+    font-size: var(--fs-sm);
+}
+
+.plannerCoursePopupClose{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--background);
+    color: var(--text-secondary);
+    font-size: var(--fs-lg);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.plannerCoursePopupClose:hover{
+    background-color: var(--border);
+    color: var(--text);
+}
+
+.plannerCoursePopupSearch{
+    margin-bottom: 20px;
+}
+
+.plannerCoursePopupSearch input{
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--background);
+    color: var(--text);
+    font-size: var(--fs-sm);
+    outline: none;
+}
+
+.plannerCoursePopupSearch input:focus{
+    border-color: var(--accent);
+}
+
+.plannerCoursePopupList{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.plannerCourseOption{
+    width: 100%;
+    padding: 15px;
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text);
+    text-align: left;
+    font-size: var(--fs-base);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.plannerCourseOption:hover{
+    border-color: var(--accent);
+    color: var(--accent);
 }
 
 /* Planner Summary Section CSS */

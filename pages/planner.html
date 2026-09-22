@@ -44,53 +44,41 @@
             <h2>Select Your Courses</h2>
             <p>Choose the courses you want to include in your learning plan.</p>
         </div>
-        <div class="plannerCoursesContainer">
-            <div class="plannerCourseCard">
-                <div class="plannerCourseInfo">
-                    <h3>Web Development</h3>
-                    <p>Learn how to build modern and responsive websites using HTML, CSS and JavaScript.</p>
-                    <div class="plannerCourseDetails">
-                        <span>3 Months</span>
-                        <span>PKR 5,000</span>
-                    </div>
-                </div>
-                <button type="button" class="plannerCourseButton">Select Course</button>
+        <div class="plannerCoursesContainer" id="plannerCoursesContainer">
+            <button type="button" class="plannerAddCourseCard" id="plannerAddCourseButton">
+                <i class="fa-solid fa-plus"></i>
+                <span>Add Course</span>
+            </button>
+        </div>
+        
+        <!-- Selected Courses Section -->
+
+        <section class="plannerSelectedCoursesSection">
+            <div class="plannerSelectedCoursesContainer" id="plannerSelectedCoursesContainer">
             </div>
-            <div class="plannerCourseCard">
-                <div class="plannerCourseInfo">
-                    <h3>Web Development</h3>
-                    <p>Learn how to build modern and responsive websites using HTML, CSS and JavaScript.</p>
-                    <div class="plannerCourseDetails">
-                        <span>3 Months</span>
-                        <span>PKR 5,000</span>
-                    </div>
+        </section>
+    </section>
+
+    <!-- Course Selection Popup -->
+
+    <div class="plannerCourseOverlay" id="plannerCourseOverlay">
+        <div class="plannerCoursePopup">
+            <div class="plannerCoursePopupHeader">
+                <div>
+                    <h2>Add a Course</h2>
+                    <p>Select a course to add to your learning plan.</p>
                 </div>
-                <button type="button" class="plannerCourseButton">Select Course</button>
+                <button type="button" class="plannerCoursePopupClose" id="plannerCoursePopupClose">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
             </div>
-            <div class="plannerCourseCard">
-                <div class="plannerCourseInfo">
-                    <h3>Web Development</h3>
-                    <p>Learn how to build modern and responsive websites using HTML, CSS and JavaScript.</p>
-                    <div class="plannerCourseDetails">
-                        <span>3 Months</span>
-                        <span>PKR 5,000</span>
-                    </div>
-                </div>
-                <button type="button" class="plannerCourseButton">Select Course</button>
+            <div class="plannerCoursePopupSearch">
+                <input type="text" id="plannerCourseSearch" placeholder="Search for a course...">
             </div>
-            <div class="plannerCourseCard">
-                <div class="plannerCourseInfo">
-                    <h3>Web Development</h3>
-                    <p>Learn how to build modern and responsive websites using HTML, CSS and JavaScript.</p>
-                    <div class="plannerCourseDetails">
-                        <span>3 Months</span>
-                        <span>PKR 5,000</span>
-                    </div>
-                </div>
-                <button type="button" class="plannerCourseButton">Select Course</button>
+            <div class="plannerCoursePopupList" id="plannerCoursePopupList">
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Planner Summary Section -->
 
@@ -103,17 +91,17 @@
             <div class="plannerSummaryCard">
                 <i class="fa-solid fa-graduation-cap"></i>
                 <h3>Courses Selected</h3>
-                <p>0</p>
+                <p id="plannerCoursesSelected">0</p>
             </div>
             <div class="plannerSummaryCard">
                 <i class="fa-solid fa-clock"></i>
                 <h3>Total Duration</h3>
-                <p>0 Months</p>
+                <p id="plannerTotalDuration">0 Hours</p>
             </div>
             <div class="plannerSummaryCard">
                 <i class="fa-solid fa-money-bill"></i>
                 <h3>Total Cost</h3>
-                <p>PKR 0</p>
+                <p id="plannerTotalCost">PKR 0</p>
             </div>
         </div>
     </section>
@@ -128,42 +116,8 @@
         <div class="plannerComparisonContainer">
             <div class="plannerComparisonChart">
                 <h3>Course Cost Comparison</h3>
-                <div class="comparisonBar">
-                    <div class="comparisonBarLabel">
-                        <span>Web Development</span>
-                        <span>PKR 5,000</span>
-                    </div>
-                    <div class="comparisonBarBackground">
-                        <div class="comparisonBarFill"></div>
-                    </div>
-                </div>
-                <div class="comparisonBar">
-                    <div class="comparisonBarLabel">
-                        <span>Web Development</span>
-                        <span>PKR 5,000</span>
-                    </div>
-                    <div class="comparisonBarBackground">
-                        <div class="comparisonBarFill"></div>
-                    </div>
-                </div>
-                <div class="comparisonBar">
-                    <div class="comparisonBarLabel">
-                        <span>Web Development</span>
-                        <span>PKR 5,000</span>
-                    </div>
-                    <div class="comparisonBarBackground">
-                        <div class="comparisonBarFill"></div>
-                    </div>
-                </div>
-                <div class="comparisonBar">
-                    <div class="comparisonBarLabel">
-                        <span>Web Development</span>
-                        <span>PKR 5,000</span>
-                    </div>
-                    <div class="comparisonBarBackground">
-                        <div class="comparisonBarFill"></div>
-                    </div>
-                </div>
+                <div class="comparisonBarsContainer" id="comparisonBarsContainer"></div>
+                <div class="plannerComparisonChart"></div>
             </div>
         </div>
     </section>
