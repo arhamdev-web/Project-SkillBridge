@@ -207,4 +207,37 @@ fetch("../data/testimonials.json")
 });
 }
 
+
 // TESTIMONIALS SECTION JS ENDED
+
+
+// MOBILE NAVBAR HAMBURGER JS STARTED
+
+const menuButton = document.querySelector(".navbarMenuButton");
+const navbarLinks = document.querySelector(".navbarLinks");
+
+if(menuButton && navbarLinks) {
+    menuButton.addEventListener("click", function() {
+        navbarLinks.classList.toggle("active");
+
+        const menuIsOpen = navbarLinks.classList.contains("active");
+
+        menuButton.setAttribute("aria-expanded", menuIsOpen);
+
+        if(menuIsOpen) {
+            menuButton.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+        } else {
+            menuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        }
+    });
+
+    navbarLinks.querySelectorAll("a").forEach(function(link) {
+        link.addEventListener("click", function() {
+            navbarLinks.classList.remove("active");
+            menuButton.setAttribute("aria-expanded", "false");
+            menuButton.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        });
+    });
+}
+
+// MOBILE NAVBAR HAMBURGER JS ENDED

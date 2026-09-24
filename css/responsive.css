@@ -1,0 +1,1113 @@
+/* ========================================
+   SKILL BRIDGE RESPONSIVE CSS
+   ======================================== */
+
+
+/* ========================================
+   LARGE TABLET / SMALL DESKTOP
+   1200px AND BELOW
+   ======================================== */
+
+@media (max-width: 1200px){
+
+    /* Navbar */
+
+    .navbar{
+        padding: 0px 25px;
+    }
+
+    .navbarBrand{
+        width: 35%;
+    }
+
+    .navbarLinks{
+        width: 55%;
+    }
+
+    /* Featured Courses */
+
+    .featuredCoursesSection{
+        height: auto;
+        padding: 40px 6%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+        gap: 25px;
+    }
+
+    .featuredCourseCard{
+        width: 100%;
+        height: auto;
+        min-height: 440px;
+    }
+
+    /* FAQ */
+
+    .faqSection{
+        padding: 60px 6%;
+    }
+
+    /* Opportunities */
+
+    .opportunitiesCardsSection{
+        grid-template-columns: repeat(3, minmax(220px, 1fr));
+        padding: 40px 5%;
+        gap: 20px;
+    }
+
+    .opportunityCard{
+        height: auto;
+        min-height: 450px;
+    }
+
+    .opportunityCardContent p{
+        height: auto;
+        min-height: 65px;
+    }
+
+    .opportunityCardSkills{
+        height: auto;
+        min-height: 60px;
+    }
+
+    /* Planner */
+
+    .plannerSelectedCoursesContainer{
+        grid-template-columns: repeat(3, minmax(220px, 1fr));
+    }
+
+    .plannerSummaryContainer{
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+    }
+
+    /* Enrollment */
+
+    .enrollmentCoursesContainer{
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+    }
+
+    /* About */
+
+    .aboutPlatformContent{
+        gap: 35px;
+    }
+
+    /* Details */
+
+    .courseOverviewContent,
+    .courseRequirementsContent{
+        gap: 35px;
+    }
+
+    /* Footer */
+
+    .footerContent{
+        gap: 30px;
+    }
+
+}
+
+
+/* ========================================
+   TABLET
+   992px AND BELOW
+   ======================================== */
+
+@media (max-width: 992px){
+
+    /* Navbar */
+
+    .navbar{
+        height: 85px;
+        padding: 0px 20px;
+    }
+
+    .navbarBrand{
+        width: auto;
+    }
+
+    .navImage{
+        width: 80px;
+        height: 75px;
+    }
+
+    .navLogo{
+        font-size: var(--fs-2xl);
+    }
+
+    .navbarLinks{
+        width: auto;
+        gap: 25px;
+    }
+
+    /* Hero */
+
+    .heroSection{
+        height: 400px;
+        padding: 40px 6%;
+    }
+
+    .heroSectionHeading{
+        font-size: 2.6rem;
+    }
+
+    /* Featured Courses */
+
+    .featuredCoursesSection{
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+        padding: 40px 5%;
+    }
+
+    /* FAQ */
+
+    .faqContainer{
+        gap: 15px;
+    }
+
+    .faqItem{
+        padding: 20px;
+    }
+
+    /* Testimonials */
+
+    .testimonialCard{
+        width: 80%;
+        padding: 25px;
+    }
+
+    .testimonialImage{
+        width: 140px;
+        height: 140px;
+    }
+
+    /* Footer */
+
+    .footerContent{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1fr;
+        gap: 35px;
+    }
+
+    .footerBrand{
+        width: auto;
+    }
+
+    .footerCTA{
+        width: auto;
+        grid-column: 1 / -1;
+    }
+
+    /* Page Headings */
+
+    .opportunitiesHeading,
+    .plannerHeading,
+    .enrollmentHeading,
+    .aboutHeading{
+        font-size: 2.6rem;
+    }
+
+    /* Opportunities */
+
+    .opportunitiesSearchBox,
+    .searchSuggestions{
+        width: 100%;
+        max-width: 650px;
+    }
+
+    .opportunitiesCardsSection{
+        grid-template-columns: repeat(2, minmax(240px, 1fr));
+    }
+
+    /* Planner */
+
+    .plannerCoursesSection,
+    .plannerSelectedCoursesSection{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .plannerSelectedCoursesContainer{
+        grid-template-columns: repeat(2, minmax(240px, 1fr));
+    }
+
+    .plannerSummaryContainer{
+        grid-template-columns: repeat(3, minmax(180px, 1fr));
+        gap: 15px;
+    }
+
+    .plannerComparisonSection{
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .plannerComparisonChart{
+        width: 100%;
+    }
+
+    /* Enrollment */
+
+    .enrollmentCoursesSection,
+    .enrollmentFormSection{
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .enrollmentCoursesContainer{
+        grid-template-columns: repeat(2, minmax(240px, 1fr));
+    }
+
+    .enrollmentForm{
+        width: 100%;
+    }
+
+    /* About */
+
+    .aboutPlatformSection{
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .aboutPlatformContent{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .aboutPlatformPoints{
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+
+    /* Details */
+
+    .courseDetailsHeroSection,
+    .courseOverviewSection,
+    .courseSkillsSection,
+    .courseRequirementsSection,
+    .learningOutcomesSection,
+    .courseDetailsCtaSection{
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .courseDetailsHeroText{
+        padding: 35px;
+    }
+
+    .courseDetailsHeroText h1{
+        font-size: 2.6rem;
+    }
+
+    .courseOverviewContent,
+    .courseRequirementsContent{
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .courseSkillsContainer{
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+
+    .learningOutcomesContainer{
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+
+}
+
+
+/* ========================================
+   MOBILE / HAMBURGER NAVBAR
+   768px AND BELOW
+   ======================================== */
+
+@media (max-width: 768px){
+
+    /* Prevent horizontal overflow */
+
+    html,
+    body{
+        overflow-x: hidden;
+    }
+
+    /* Navbar */
+
+    .navbar{
+        position: relative;
+        height: 75px;
+        padding: 0px 18px;
+    }
+
+    .navbarBrand{
+        width: auto;
+    }
+
+    .navImage{
+        width: 65px;
+        height: 65px;
+    }
+
+    .navLogo{
+        font-size: var(--fs-xl);
+    }
+
+    .navbarLinks{
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 10px 18px 18px;
+        background-color: var(--card);
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+        z-index: 999;
+    }
+
+    .navbarLinks.active{
+        display: flex;
+    }
+
+    .navLink{
+        width: 100%;
+        padding: 13px 12px;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .navLink:hover{
+        background-color: var(--background);
+    }
+
+    .navbarMenuButton{
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-size: 20px;
+    cursor: pointer;
+    }
+
+    /* Hero */
+
+    .heroSection{
+        height: auto;
+        min-height: 380px;
+        padding: 60px 20px;
+    }
+
+    .heroSectionHeading{
+        font-size: 2.3rem;
+        line-height: 1.2;
+    }
+
+    .heroSectionTagline{
+        margin-bottom: 25px;
+    }
+
+    .heroSectionTagline h2{
+        font-size: var(--fs-lg);
+    }
+
+    .heroSectionButton{
+        padding: 12px 20px;
+    }
+
+    /* Featured Courses */
+
+    .featuredCoursesSection{
+        grid-template-columns: 1fr;
+        padding: 35px 20px;
+        gap: 20px;
+    }
+
+    .featuredCourseCard{
+        width: 100%;
+        max-width: 420px;
+        min-height: 0;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .featuredCourseImage{
+        height: 190px;
+    }
+
+    .featuredCourseContent{
+        padding: 18px;
+    }
+
+    .featuredCourseName{
+        font-size: var(--fs-xl);
+    }
+
+    .featuredCourseDescription{
+        height: auto;
+        min-height: 0;
+    }
+
+    .featuredCourseSkills{
+        height: auto;
+        min-height: 0;
+        justify-content: flex-start;
+    }
+
+    /* FAQ */
+
+    .faqSection{
+        padding: 45px 20px;
+    }
+
+    .faqHeading{
+        margin-bottom: 30px;
+    }
+
+    .faqHeading h2{
+        font-size: var(--fs-2xl);
+    }
+
+    .faqContainer{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .faqItem{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .faqCTA{
+        padding: 25px 20px;
+        margin-top: 25px;
+    }
+
+    /* Testimonials */
+
+    .testimonialsSection{
+        height: 440px;
+        padding: 20px;
+    }
+
+    .testimonialCard{
+        width: calc(100% - 40px);
+        min-height: 330px;
+        padding: 25px 20px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .testimonialImage{
+        width: 100px;
+        height: 100px;
+    }
+
+    .testimonialText{
+        font-size: var(--fs-base);
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    .testimonialName{
+        font-size: var(--fs-lg);
+    }
+
+    /* Footer */
+
+    .footerSection{
+        padding: 40px 20px 20px;
+    }
+
+    .footerContent{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footerBrand,
+    .footerCTA{
+        width: 100%;
+    }
+
+    .footerLinks{
+        gap: 8px;
+    }
+
+    .footerBottom{
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        text-align: center;
+    }
+
+    /* Page Headings */
+
+    .opportunitiesHeadingSection,
+    .plannerHeadingSection,
+    .enrollmentHeadingSection,
+    .aboutHeadingSection{
+        padding: 50px 20px;
+    }
+
+    .opportunitiesHeading,
+    .plannerHeading,
+    .enrollmentHeading,
+    .aboutHeading{
+        font-size: 2.3rem;
+        line-height: 1.2;
+    }
+
+    .opportunitiesTagline,
+    .plannerTagline,
+    .enrollmentTagline,
+    .aboutTagline{
+        font-size: var(--fs-base);
+    }
+
+    /* Opportunities Search */
+
+    .opportunitiesSearchSection{
+        padding: 25px 20px;
+    }
+
+    .opportunitiesSearchBox{
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .opportunitiesSearchInput{
+        width: 100%;
+    }
+
+    .opportunitiesSearchButton{
+        width: 100%;
+    }
+
+    .searchSuggestions{
+        width: 100%;
+        max-height: 120px;
+        overflow-y: auto;
+    }
+
+    /* Opportunities Cards */
+
+    .opportunitiesCardsSection{
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .opportunityCard{
+        width: 100%;
+        max-width: 420px;
+        min-height: 0;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .opportunityCard img{
+        height: 190px;
+    }
+
+    .opportunityCardContent{
+        padding: 18px;
+    }
+
+    .opportunityCardContent p{
+        height: auto;
+        min-height: 0;
+    }
+
+    .opportunityCardSkills{
+        height: auto;
+        min-height: 0;
+    }
+
+    /* Planner */
+
+    .plannerCoursesSection{
+        padding: 35px 20px;
+    }
+
+    .plannerCoursesHeading h2,
+    .plannerSummaryHeading h2,
+    .plannerComparisonHeading h2{
+        font-size: var(--fs-2xl);
+    }
+
+    .plannerSelectedCoursesSection{
+        padding: 35px 20px;
+    }
+
+    .plannerSelectedCoursesContainer{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .plannerCourseCard,
+    .plannerSelectedCourseCard,
+    .plannerAddCourseCard{
+        min-height: 220px;
+    }
+
+    .plannerSummarySection{
+        padding: 35px 20px;
+    }
+
+    .plannerSummaryContainer{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .plannerSummaryCard{
+        padding: 25px 20px;
+    }
+
+    .plannerComparisonSection{
+        padding: 35px 20px;
+    }
+
+    .plannerComparisonChart{
+        width: 100%;
+        padding: 20px;
+        overflow-x: auto;
+    }
+
+    .plannerEnrollmentSection{
+        padding: 35px 20px;
+    }
+
+    .plannerEnrollmentContent{
+        padding: 30px 20px;
+    }
+
+    /* Planner Popup */
+
+    .plannerCoursePopup{
+        width: calc(100% - 30px);
+        max-width: none;
+        height: 600px;
+        max-height: calc(100vh - 30px);
+        padding: 20px;
+    }
+
+    .plannerCoursePopupHeader{
+        margin-bottom: 20px;
+    }
+
+    .plannerCoursePopupHeader h2{
+        font-size: var(--fs-xl);
+    }
+
+    .plannerCoursePopupList{
+        max-height: 350px;
+    }
+
+    /* Enrollment */
+
+    .enrollmentCoursesSection,
+    .enrollmentFormSection{
+        padding: 35px 20px;
+    }
+
+    .enrollmentCoursesHeading h2,
+    .enrollmentFormHeading h2{
+        font-size: var(--fs-2xl);
+    }
+
+    .enrollmentCoursesContainer{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .enrollmentCourseOption{
+        padding: 20px;
+    }
+
+    .enrollmentForm{
+        width: 100%;
+        padding: 20px;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .enrollmentCourseSelectionArea{
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .enrollmentCoursesColumn{
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .additionalCoursesContainer{
+        display: contents;
+    }
+
+    .enrollmentAddCourseGroup{
+        grid-column: 1;
+    }
+
+    .enrollmentMessageGroup,
+    .enrollmentSubmitButton,
+    .enrollmentSuccess{
+        grid-column: 1;
+    }
+
+    .enrollmentSuccessCard{
+        width: calc(100% - 30px);
+        padding: 30px 20px;
+    }
+
+    /* About */
+
+    .aboutPlatformSection{
+        padding: 45px 20px;
+    }
+
+    .aboutPlatformText h2{
+        font-size: var(--fs-2xl);
+    }
+
+    .aboutPlatformPoints{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .aboutPlatformPoint{
+        padding: 18px;
+    }
+
+    /* Details */
+
+    .courseDetailsHeroSection,
+    .courseOverviewSection,
+    .courseSkillsSection,
+    .courseRequirementsSection,
+    .learningOutcomesSection,
+    .courseDetailsCtaSection{
+        padding: 45px 20px;
+    }
+
+    .courseDetailsHeroText{
+        padding: 25px 20px;
+    }
+
+    .courseDetailsHeroText h1{
+        font-size: 2.3rem;
+        line-height: 1.2;
+    }
+
+    .courseDetailsHeroText > p{
+        font-size: var(--fs-base);
+    }
+
+    .courseDetailsInfo{
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    .courseDetailsButtons{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .courseDetailsButtons a{
+        width: 100%;
+        text-align: center;
+    }
+
+    .courseOverviewText h2,
+    .courseSkillsHeading h2,
+    .courseRequirementsText h2,
+    .learningOutcomesHeading h2{
+        font-size: var(--fs-2xl);
+    }
+
+    .courseOverviewTopics{
+        grid-template-columns: 1fr;
+    }
+
+    .courseOverviewTopic{
+        padding: 18px;
+    }
+
+    .courseSkillsContainer{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .courseSkill{
+        padding: 18px;
+    }
+
+    .courseRequirementsList{
+        gap: 10px;
+    }
+
+    .courseRequirement{
+        padding: 14px 16px;
+    }
+
+    .learningOutcomesContainer{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .learningOutcome{
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .courseDetailsCtaContent{
+        padding: 35px 20px;
+    }
+
+    .courseDetailsCtaContent h2{
+        font-size: var(--fs-2xl);
+    }
+
+    .courseDetailsCtaButtons{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .courseDetailsCtaButtons a{
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+
+/* ========================================
+   SMALL MOBILE
+   576px AND BELOW
+   ======================================== */
+
+@media (max-width: 576px){
+
+    /* Navbar */
+
+    .navbar{
+        padding: 0px 12px;
+    }
+
+    .navImage{
+        width: 58px;
+        height: 58px;
+    }
+
+    .navLogo{
+        font-size: var(--fs-lg);
+    }
+
+    .navbarMenuButton{
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Hero */
+
+    .heroSection{
+        min-height: 350px;
+        padding: 50px 15px;
+    }
+
+    .heroSectionHeading{
+        font-size: 2rem;
+    }
+
+    .heroSectionTagline h2{
+        font-size: var(--fs-base);
+    }
+
+    /* Featured Courses */
+
+    .featuredCoursesSection{
+        padding: 25px 15px;
+    }
+
+    .featuredCourseImage{
+        height: 170px;
+    }
+
+    .featuredCourseContent{
+        padding: 15px;
+    }
+
+    /* FAQ */
+
+    .faqSection{
+        padding: 40px 15px;
+    }
+
+    .faqHeading h2{
+        font-size: var(--fs-xl);
+    }
+
+    .faqHeading p{
+        font-size: var(--fs-sm);
+    }
+
+    .faqItem{
+        padding: 18px;
+    }
+
+    .faqItem h3{
+        font-size: var(--fs-base);
+    }
+
+    /* Testimonials */
+
+    .testimonialsSection{
+        height: 430px;
+        padding: 15px;
+    }
+
+    .testimonialCard{
+        width: calc(100% - 30px);
+        min-height: 350px;
+        padding: 20px 15px;
+    }
+
+    .testimonialImage{
+        width: 85px;
+        height: 85px;
+    }
+
+    .testimonialText{
+        font-size: var(--fs-sm);
+    }
+
+    /* Footer */
+
+    .footerSection{
+        padding: 35px 15px 15px;
+    }
+
+    .footerBrand h2{
+        font-size: var(--fs-xl);
+    }
+
+    .footerBottom{
+        font-size: 0.7rem;
+    }
+
+    /* Page Headings */
+
+    .opportunitiesHeadingSection,
+    .plannerHeadingSection,
+    .enrollmentHeadingSection,
+    .aboutHeadingSection{
+        padding: 40px 15px;
+    }
+
+    .opportunitiesHeading,
+    .plannerHeading,
+    .enrollmentHeading,
+    .aboutHeading{
+        font-size: 2rem;
+    }
+
+    /* Opportunities */
+
+    .opportunitiesSearchSection{
+        padding: 20px 15px;
+    }
+
+    .opportunitiesCardsSection{
+        padding: 25px 15px;
+    }
+
+    .opportunityCard img{
+        height: 170px;
+    }
+
+    .opportunityCardContent{
+        padding: 15px;
+    }
+
+    .opportunityCardContent h2{
+        font-size: var(--fs-lg);
+    }
+
+    /* Planner */
+
+    .plannerCoursesSection,
+    .plannerSelectedCoursesSection,
+    .plannerSummarySection,
+    .plannerComparisonSection,
+    .plannerEnrollmentSection{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .plannerCoursePopup{
+        width: calc(100% - 20px);
+        padding: 18px;
+    }
+
+    .plannerCoursePopupList{
+        max-height: 300px;
+    }
+
+    /* Enrollment */
+
+    .enrollmentCoursesSection,
+    .enrollmentFormSection{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .enrollmentForm{
+        padding: 18px;
+    }
+
+    .enrollmentCourseOption{
+        padding: 17px;
+    }
+
+    /* About */
+
+    .aboutPlatformSection{
+        padding: 40px 15px;
+    }
+
+    .aboutPlatformPoint{
+        padding: 16px;
+    }
+
+    /* Details */
+
+    .courseDetailsHeroSection,
+    .courseOverviewSection,
+    .courseSkillsSection,
+    .courseRequirementsSection,
+    .learningOutcomesSection,
+    .courseDetailsCtaSection{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .courseDetailsHeroText{
+        padding: 22px 17px;
+    }
+
+    .courseDetailsHeroText h1{
+        font-size: 2rem;
+    }
+
+    .courseDetailsCtaContent{
+        padding: 30px 18px;
+    }
+}

@@ -89,6 +89,10 @@ body {
     color: var(--accent-hover);
 }
 
+.navbarMenuButton{
+    display: none;
+}
+
 /* Hero Section CSS */
 
 .heroSection{
